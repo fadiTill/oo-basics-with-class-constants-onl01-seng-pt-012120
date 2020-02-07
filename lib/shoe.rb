@@ -20,7 +20,7 @@ class Shoe
 BRANDS = []
    def initialize(brand = "nike")
    @brand = brand
-   brand.each do |brand|
+   brand.each.include? do |brand|
    BRANDS << brand
    end
  end
